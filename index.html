@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <title>Acceuil</title>
+</head>
+
+<body>
+
+    <!-- Section Menu -->
+    <header>
+        <nav>
+            <h1 id="acceuil">Mon Portfolio</h1>
+            <div class="menu">
+                <a href="#acceuil">Acceuil</a>
+                <a href="#apropos">A Propos</a>
+                <a href="#mesprojets">Mes Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
+        
+            <div class="contact">
+                <i class="bi bi-telephone-fill"></i>
+                <p class="telephone">06-66-38-93-55</p>
+            </div>
+        </nav>
+    </header>
+
+     <!-- Section principale -->
+    <main>
+        <section class="horizontal">
+            <div class="vertical">
+                <div class="hello">
+                    <img class="picprofil-miniature" src="images/pngegg-5.png" alt="Avatar coloré">
+                    <h1 class="cte">Hello les amis!</h1>
+                </div>
+                <h2 class="dispfr">Je suis disponible en Freelance</h2>
+                <div class="cta">
+                    <a id="blcklien" href="#contact">On commence quand ?</a>
+                </div>
+            </div>
+            <img class="picprofil" src="images/profile-pic.png" alt="Photo de profil">
+        </section>
+
+    <!-- Section secondaire -->
+        <section >
+            <div class="vertical">
+                <div class="presentation">
+                    <img src="images/headway.jpg" alt="image représantant mon histoire">
+                    <div class="vertical">
+                            <div class="blockd" >
+                                <h1 id="apropos" class="titre">Mon Histoire</h1>
+                                <img src="images/pngegg-5.png" alt="Avatar coloré">
+                            </div>
+                            <h2 class="pres">Quelques mots à propose de moi</h2>
+                            <p class="texte"> Fort d'une expérience enrichissante en cuisine, où rigueur, autonomie et adaptabilité étaient indispensables, j'ai décidé de me tourner vers ma passion : la programmation. Ce parcours atypique m'a permis de développer des compétences solides dans plusieurs langages de programmation, ainsi que dans des domaines tels que le traitement d'image et de vidéo, et la modélisation 3D. Enthousiaste et passionné par le travail en équipe, je suis prêt à mettre mon savoir-faire et mon énergie au service de vos projets.</p>
+                    </div>
+                </div>
+                <div class="blockg">
+                    <div class="image-container">
+                        <img src="images/aerial-view.jpg" alt="Des mains au dessus d'un clavier d'ordinateur portable">
+                    </div>
+                    <h1 id="mesprojets" class="titre" >Mes Projets</h1>
+                </div>
+                <div class="presentation">
+                    <div class="vertical block">
+                        <p class="mpg">Site Web</p>
+                        <h2 class="mpg">Zoik agency</h2>
+                        <img class="rotation" src="images/nikhil.jpg" alt="Une canette de soda jaune">
+                    </div>
+                    <div class="vertical block">
+                        <p class="mpg">Photographie</p>
+                        <h2 class="mpg">The Watch</h2>
+                        <img class="rotation2" src="images/the-5th.jpg" alt="Un basketeur qui regarde sa montre">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Section contact -->
+        <section>
+            <div class="blockd blckvert3">
+                <div class="image-container">
+                    <img src="images/handshake-man.jpg" alt="Une poignée de main.">
+                </div>                
+                <h1 id="contact" class="titre">Contact</h1>
+            </div>
+        </section>
+
+        <section>
+            <div class="blck-form">
+                <div class="horizontal renseignement">
+                    <div class="vertical algauche">
+                        <h2>Restons Connecté</h2>
+                        <div class="reseau">
+                            <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                            <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a href="https://pinterest.com" target="_blank"><i class="bi bi-pinterest"></i></a>
+                        </div>
+                        <h2>Démarrons un projet</h2>
+                        <p>Je suis disponible en Freelance</p>
+                    </div>
+
+                    <div class="vertical aldroite">
+                        <h2 class="aldroite">A Propos</h2>
+                        <p>Je suis un futur professionnel du Web. Restez en contact avec moi.</p>
+                        <h2  class="aldroite">Email</h2>
+                        <p>laubert.yoann@gmail.com</p>
+                        <h2  class="aldroite">Téléphone</h2>
+                        <p>06 66 38 93 55</p>
+                    </div>
+
+
+
+                </div>
+
+                <form action="envoimail.php" method="post">
+                    <div class="form-group">
+                        <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                    </div>
+        
+                    <div class="form-group">
+
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <p>Vos projets :</p>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="projet" value="site-web"> Site web</label>
+                            <label><input type="checkbox" name="projet" value="ecommerce"> Ecommerce</label>
+                            <label><input type="checkbox" name="projet" value="seo"> SEO</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Raconter votre projet" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </form>
+
+
+            </div>
+
+
+        </section>
+        
+    </main>
+    <!-- Pied de page -->
+    <footer>
+        <section>
+            <p class="credits">Copyright © 2024 - Mon Portfolio - Tout droits réservés. Design: Greta Bretagne Sud</p>
+        </section>
+            
+    </footer>
+</body>
+</html>
